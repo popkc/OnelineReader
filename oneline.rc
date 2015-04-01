@@ -1,0 +1,469 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\oneline.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\oneline.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ONELINE_DIALOG DIALOGEX 0, 0, 190, 84
+STYLE WS_POPUP
+EXSTYLE WS_EX_APPWINDOW
+FONT 11, "宋体", 0, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG_SETTINGS DIALOG DISCARDABLE  0, 0, 221, 172
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置"
+FONT 11, "宋体"
+BEGIN
+    CONTROL         "Tab2",IDC_TAB_SETTINGS,"SysTabControl32",0x0,1,1,219,
+                    148
+    DEFPUSHBUTTON   "确定",IDC_BUTTON_OK,54,153,48,14
+    PUSHBUTTON      "取消",IDC_BUTTON_CANCEL,118,153,48,14
+END
+
+IDD_DIALOG_SETTING_READ DIALOG DISCARDABLE  0, 0, 214, 123
+STYLE WS_CHILD
+FONT 11, "宋体"
+BEGIN
+    PUSHBUTTON      "字体...",IDC_BUTTON_FONT,22,5,45,14
+    PUSHBUTTON      "前景色...",IDC_BUTTON_FCOLOR,82,5,45,14
+    PUSHBUTTON      "背景色...",IDC_BUTTON_BGCOLOR,142,5,45,14
+    LTEXT           "左边距：",IDC_STATIC,8,32,39,11
+    EDITTEXT        IDC_EDIT_SLEFT,59,29,40,14,WS_GROUP
+    CONTROL         "Spin1",IDC_SPIN_SLEFT,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,105,29,9,12
+    LTEXT           "右边距：",IDC_STATIC,8,50,42,11
+    EDITTEXT        IDC_EDIT_SRIGHT,59,46,40,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_SRIGHT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,105,47,9,12
+    LTEXT           "上边距：",IDC_STATIC,8,68,42,11
+    EDITTEXT        IDC_EDIT_STOP,59,66,40,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_STOP,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,105,65,9,12
+    LTEXT           "下边距：",IDC_STATIC,8,86,42,11
+    EDITTEXT        IDC_EDIT_SBOTTOM,59,84,40,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_SBOTTOM,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,105,83,9,12
+    LTEXT           "文字间距：",IDC_STATIC,8,105,42,11
+    EDITTEXT        IDC_EDIT_WORDSPACE,59,103,40,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_WORDSPACE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,105,104,9,12
+    CONTROL         "智能分段",IDC_CHECK_SMARTSEG,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,141,30,46,10
+END
+
+IDD_DIALOG_SETTING_ADVANCE DIALOG DISCARDABLE  0, 0, 210, 121
+STYLE WS_CHILD
+FONT 11, "宋体"
+BEGIN
+    LTEXT           "内存中文件块的最大数量：",IDC_STATIC,6,7,101,11
+    EDITTEXT        IDC_EDIT_MAXBLOCK,112,4,40,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_MAXBLOCK,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,164,5,9,14
+    PUSHBUTTON      "清理文件信息",IDC_BUTTON_CLEAR,6,23,69,14
+END
+
+IDD_DIALOG_VOICE DIALOG DISCARDABLE  0, 0, 216, 131
+STYLE WS_CHILD
+FONT 11, "宋体"
+BEGIN
+    COMBOBOX        IDC_COMBO_VOICE,31,4,178,73,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "语音：",IDC_STATIC,3,7,24,11
+    CONTROL         "Slider1",IDC_SLIDER_VOLUME,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,26,22,113,15
+    LTEXT           "音量：",IDC_STATIC,3,25,25,11
+    LTEXT           "速率：",IDC_STATIC,3,45,25,8
+    CONTROL         "Slider2",IDC_SLIDER_RATE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,26,41,113,15
+    LTEXT           "",IDC_STATIC_RATE,143,45,13,8,NOT WS_GROUP
+    LTEXT           "",IDC_STATIC_VOLUME,143,26,14,8,NOT WS_GROUP
+    PUSHBUTTON      "试听",IDC_BUTTON_LISTEN,4,61,41,14
+END
+
+IDD_DIALOG_ABOUT DIALOG DISCARDABLE  0, 0, 256, 164
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于"
+FONT 11, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_ABOUT,3,3,250,160,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL | NOT WS_TABSTOP
+END
+
+IDD_DIALOG_JUMPTO DIALOG DISCARDABLE  0, 0, 172, 46
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "跳转到"
+FONT 11, "宋体"
+BEGIN
+    CONTROL         "Slider1",IDC_SLIDER_JUMPTO,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,7,7,158,15
+    EDITTEXT        IDC_EDIT_JUMPTO,59,26,39,13,ES_RIGHT
+    DEFPUSHBUTTON   "跳转",IDC_BUTTON_JUMPTO,110,25,50,14
+    LTEXT           "%",IDC_STATIC,99,28,8,8
+END
+
+IDD_DIALOG_SEARCH DIALOG DISCARDABLE  0, 0, 239, 75
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "查找"
+FONT 11, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_SEARCH,49,7,183,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "查找",IDC_BUTTON_SEARCH,133,54,45,14
+    LTEXT           "查找内容：",IDC_STATIC,7,9,41,8
+    GROUPBOX        "查找范围",IDC_STATIC,7,27,54,41
+    CONTROL         "附近",IDC_RADIO_NEARBY,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,13,40,32,10
+    CONTROL         "全文",IDC_RADIO_ALL,"Button",BS_AUTORADIOBUTTON,13,53,
+                    32,10
+    GROUPBOX        "查找方向",IDC_STATIC,70,27,54,41
+    CONTROL         "向上",IDC_RADIO_UP,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,76,40,32,10
+    CONTROL         "向下",IDC_RADIO_DOWN,"Button",BS_AUTORADIOBUTTON,76,53,
+                    32,10
+    PUSHBUTTON      "取消",IDC_BUTTON_CANCEL,187,54,45,14,WS_DISABLED
+    CONTROL         "Progress1",IDC_PROGRESS_SEARCH,"msctls_progress32",
+                    PBS_SMOOTH | NOT WS_VISIBLE | WS_BORDER,133,44,99,9
+    CONTROL         "查找时启用智能分段（慢）",IDC_CHECK_SMARTSEG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,133,31,99,10
+END
+
+IDD_DIALOG_INDEX DIALOG DISCARDABLE  0, 0, 321, 284
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "章节索引"
+MENU IDR_MENU_INDEX
+FONT 11, "宋体"
+BEGIN
+    CONTROL         "List3",IDC_LIST_INDEX,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,31,307,246
+    CONTROL         "Progress1",IDC_PROGRESS_INDEX,"msctls_progress32",
+                    PBS_SMOOTH | NOT WS_VISIBLE | WS_BORDER,62,14,252,14
+    DEFPUSHBUTTON   "跳转",IDC_BUTTON_JUMP,7,14,50,14
+END
+
+IDD_DIALOG_INDEXSETTING DIALOG DISCARDABLE  0, 0, 254, 250
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "索引设置"
+FONT 11, "宋体"
+BEGIN
+    LTEXT           "每段最大字数（超过这个字数时不进行解析）：",IDC_STATIC,
+                    7,9,164,8
+    EDITTEXT        IDC_EDIT_MAXCHAR,171,6,44,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_MAXCHAR,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,217,6,9,14
+    EDITTEXT        IDC_EDIT_REGEX,13,115,228,39,ES_MULTILINE | 
+                    ES_AUTOVSCROLL
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,83,157,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,137,157,50,14
+    PUSHBUTTON      "修改",IDC_BUTTON_MODIFY,191,157,50,14
+    PUSHBUTTON      "确定",IDC_BUTTON_OK,36,229,50,14
+    PUSHBUTTON      "取消",IDC_BUTTON_CANCEL,102,229,50,14
+    PUSHBUTTON      "恢复默认",IDC_BUTTON_DEFAULT,168,229,50,14
+    GROUPBOX        "用于判断是否为有效索引的正则表达式",IDC_STATIC,7,25,240,
+                    199
+    LISTBOX         IDC_LIST_REGEX,13,35,228,77,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_MATCH,13,174,174,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "匹配测试",IDC_BUTTON_MATCH,191,174,50,14
+    LTEXT           "说明：",IDC_STATIC,13,190,24,8
+    CONTROL         "1.程序在实际匹配时会自动忽略行首的空格，所以不必写成^\\s*",
+                    IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,13,200,
+                    228,8
+    LTEXT           "2.匹配测试时是与列表中的所有正则表达式进行匹配。",
+                    IDC_STATIC,13,211,182,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "念千\0"
+            VALUE "FileDescription", "用于在办公室进行阅读的简单软件\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "oneline\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2014\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "oneline.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "一行小说阅读器\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "popup"
+    BEGIN
+        MENUITEM "打开(&O)...",                 ID_MENU_OPEN
+        POPUP "打开最近文件(&F)"
+        BEGIN
+            MENUITEM "（空）",                      ID_MENU_EMPTY, GRAYED
+        END
+        MENUITEM SEPARATOR
+        POPUP "乱码处理(&M)", GRAYED
+        BEGIN
+            POPUP "修改编码(&C)"
+            BEGIN
+                MENUITEM "自动检测(&D)",                ID_MENU_AUTODETECT
+                MENUITEM SEPARATOR
+                MENUITEM "&ANSI",                       ID_MENU_ANSI
+                MENUITEM "UTF-&8",                      ID_MENU_UTF8
+                MENUITEM "&Unicode",                    ID_MENU_UNICODE
+            END
+            MENUITEM "前移一个字节(&B)",            ID_MENU_MOVEFORWARD
+            MENUITEM "后移一个字节(&N)",            ID_MENU_MOVEBACKWARD
+        END
+        POPUP "跳转(&J)", GRAYED
+        BEGIN
+            MENUITEM "跳转到(&J)...\tCtrl+J",       ID_MENU_JUMP
+            MENUITEM "查找(&F)...\tCtrl+F",         ID_MENU_FIND
+            MENUITEM "章节索引(&I)...\tCtrl+I",     ID_MENU_INDEX
+        END
+        MENUITEM "朗读(&D)\tCtrl+F12",          ID_MENU_READ, GRAYED
+        MENUITEM "自动滚动(&R)\tEnter",         ID_MENU_AUTOROLL, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "显示托盘(&T)",                ID_MENU_SHOWTRAYICON
+        , CHECKED
+        MENUITEM "设置(&S)...",                 ID_MENU_SETTINGS
+        MENUITEM SEPARATOR
+        MENUITEM "关于(&A)",                    ID_MENU_ABOUT
+        MENUITEM "退出(&X)",                    ID_MENU_EXIT
+    END
+    POPUP "trayicon"
+    BEGIN
+        MENUITEM "显示窗口(&W)",                ID_MENU2_SHOW
+        MENUITEM "设置(&S)...",                 ID_MENU2_SETTINGS
+        MENUITEM "朗读(&D)\tCtrl+F12",          ID_MENU2_READ, GRAYED
+        MENUITEM "显示托盘(&T)",                ID_MENU2_SHOWTRAYICON
+        , CHECKED
+        MENUITEM "退出(&X)",                    ID_MENU2_EXIT
+    END
+END
+
+IDR_MENU_INDEX MENU DISCARDABLE 
+BEGIN
+    POPUP "索引"
+    BEGIN
+        MENUITEM "建立索引",                    ID_MENU_INDEX_BUILD
+        MENUITEM "继续建立索引",                ID_MENU_INDEX_CONTINUE
+        MENUITEM "停止",                        ID_MENU_INDEX_STOP, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "删除一条索引",                ID_MENU_INDEX_DELETE
+        MENUITEM "清空索引",                    ID_MENU_INDEX_CLEAR
+    END
+    POPUP "高级"
+    BEGIN
+        MENUITEM "设置...",                     ID_MENU_INDEX_SETTING
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 220
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_DIALOG_JUMPTO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_DIALOG_SEARCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 68
+    END
+
+    IDD_DIALOG_INDEX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 314
+        TOPMARGIN, 14
+        BOTTOMMARGIN, 277
+    END
+
+    IDD_DIALOG_INDEXSETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 247
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 243
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR_INDEX TOOLBAR DISCARDABLE  14, 14
+BEGIN
+    BUTTON      ID_MENU_INDEX_BUILD
+    BUTTON      ID_MENU_INDEX_CONTINUE
+    BUTTON      ID_MENU_INDEX_STOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR_INDEX       BITMAP  DISCARDABLE     "res\\toolbar_.bmp"
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\oneline.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
